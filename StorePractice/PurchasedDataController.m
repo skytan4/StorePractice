@@ -1,17 +1,20 @@
 //
 //  PurchasedDataController.m
-//  StorePractice
+//  MyStoreApp
 //
 //  Created by Skyler Tanner on 8/31/15.
-//  Copyright © 2015 Skyler Tanner. All rights reserved.
+//  Copyright (c) 2015 SkyTan. All rights reserved.
 //
 
 #import "PurchasedDataController.h"
 #import "StorePurchaseController.h"
 
 static NSString * const kAdsRemovedKey = @"kAdsRemovedKey";
+
 @interface PurchasedDataController()
+
 @property (assign, nonatomic) BOOL adsRemoved;
+
 @end
 
 @implementation PurchasedDataController
@@ -24,12 +27,13 @@ static NSString * const kAdsRemovedKey = @"kAdsRemovedKey";
         [sharedInstance loadFromDefaults];
         [sharedInstance registerForNotifications];
     });
+    
     return sharedInstance;
 }
 
 - (void)registerForNotifications {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(purchaseNotificationFired:) name:kInAppPurchaseCompletedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(purchaseNotificationFired:) name:kInAppPurchaseCompletedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(purchaseNofticiationFired:) name:kInAppPurchaseCompletedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(purchaseNofticiationFired:) name:kInAppPurchaseRestoredNotification object:nil];
 }
 
 - (void)dealloc {
@@ -37,22 +41,21 @@ static NSString * const kAdsRemovedKey = @"kAdsRemovedKey";
 }
 
 - (void)loadFromDefaults {
-    self.adsRemoved = [[NSUserDefaults standardUserDefaults]boolForKey:kAdsRemovedKey];
+    self.adsRemoved = [[NSUserDefaults standardUserDefaults] boolForKey:kAdsRemovedKey];
 }
 
-- (void) purchaseNotificationFired:(NSNotification *)notification {
+- (void)purchaseNofticiationFired:(NSNotification *)notification {
     NSString *productID = notification.userInfo[kProductIDKey];
     
-    if ([productID isEqualToString:@""]) {
+    if ([productID isEqualToString:@"com.SkyTan.StorePractice.removeAds"]) {
         self.adsRemoved = YES;
         
-        //store in NSUserDefaults in case they dont have internet
         [[NSUserDefaults standardUserDefaults] setBool:self.adsRemoved forKey:kAdsRemovedKey];
     }
     
     [[NSNotificationCenter defaultCenter] postNotificationName:kPurchasedContentUpdated object:nil];
+    
+    
 }
-
-
 
 @end

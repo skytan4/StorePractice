@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  StoreViewController.h
 //  MyStoreApp
 //
 //  Created by Skyler Tanner on 8/31/15.
@@ -9,8 +9,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface StoreViewController : UIViewController
 
 @end
-

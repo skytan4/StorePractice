@@ -10,9 +10,9 @@
 		2476C1341B94BB4B007CCF99 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 2476C1331B94BB4B007CCF99 /* products.json */; settings = {ASSET_TAGS = (); }; };
 		2476C1381B94BC2C007CCF99 /* StorePurchaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476C1371B94BC2C007CCF99 /* StorePurchaseController.m */; settings = {ASSET_TAGS = (); }; };
 		2476C13B1B94BCCB007CCF99 /* PurchasedDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476C13A1B94BCCB007CCF99 /* PurchasedDataController.m */; settings = {ASSET_TAGS = (); }; };
+		2476C13E1B94C4BC007CCF99 /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476C13D1B94C4BC007CCF99 /* StoreViewController.m */; settings = {ASSET_TAGS = (); }; };
 		24E0F34F1B94A8D200D43334 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F34E1B94A8D200D43334 /* main.m */; };
 		24E0F3521B94A8D200D43334 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F3511B94A8D200D43334 /* AppDelegate.m */; };
-		24E0F3551B94A8D200D43334 /* StorePractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F3531B94A8D200D43334 /* StorePractice.xcdatamodeld */; };
 		24E0F3581B94A8D200D43334 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F3571B94A8D200D43334 /* ViewController.m */; };
 		24E0F35B1B94A8D200D43334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E0F3591B94A8D200D43334 /* Main.storyboard */; };
 		24E0F35D1B94A8D200D43334 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24E0F35C1B94A8D200D43334 /* Images.xcassets */; };
@@ -36,12 +36,13 @@
 		2476C1371B94BC2C007CCF99 /* StorePurchaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorePurchaseController.m; sourceTree = "<group>"; };
 		2476C1391B94BCCB007CCF99 /* PurchasedDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasedDataController.h; sourceTree = "<group>"; };
 		2476C13A1B94BCCB007CCF99 /* PurchasedDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasedDataController.m; sourceTree = "<group>"; };
+		2476C13C1B94C4BC007CCF99 /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		2476C13D1B94C4BC007CCF99 /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
 		24E0F3491B94A8D200D43334 /* StorePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E0F34D1B94A8D200D43334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24E0F34E1B94A8D200D43334 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24E0F3501B94A8D200D43334 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24E0F3511B94A8D200D43334 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		24E0F3541B94A8D200D43334 /* StorePractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StorePractice.xcdatamodel; sourceTree = "<group>"; };
 		24E0F3561B94A8D200D43334 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		24E0F3571B94A8D200D43334 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		24E0F35A1B94A8D200D43334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,10 +109,11 @@
 				24E0F3511B94A8D200D43334 /* AppDelegate.m */,
 				24E0F3561B94A8D200D43334 /* ViewController.h */,
 				24E0F3571B94A8D200D43334 /* ViewController.m */,
+				2476C13C1B94C4BC007CCF99 /* StoreViewController.h */,
+				2476C13D1B94C4BC007CCF99 /* StoreViewController.m */,
 				2476C1351B94BB8A007CCF99 /* IAP */,
 				24E0F35C1B94A8D200D43334 /* Images.xcassets */,
 				24E0F35E1B94A8D200D43334 /* LaunchScreen.xib */,
-				24E0F3531B94A8D200D43334 /* StorePractice.xcdatamodeld */,
 				24E0F34C1B94A8D200D43334 /* Supporting Files */,
 			);
 			path = StorePractice;
@@ -187,7 +189,7 @@
 		24E0F3411B94A8D100D43334 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Skyler Tanner";
 				TargetAttributes = {
 					24E0F3481B94A8D200D43334 = {
@@ -248,7 +250,7 @@
 				24E0F34F1B94A8D200D43334 /* main.m in Sources */,
 				24E0F3581B94A8D200D43334 /* ViewController.m in Sources */,
 				2476C1381B94BC2C007CCF99 /* StorePurchaseController.m in Sources */,
-				24E0F3551B94A8D200D43334 /* StorePractice.xcdatamodeld in Sources */,
+				2476C13E1B94C4BC007CCF99 /* StoreViewController.m in Sources */,
 				2476C13B1B94BCCB007CCF99 /* PurchasedDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +314,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -377,6 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StorePractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SkyTan.StorePractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -387,6 +391,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StorePractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SkyTan.StorePractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -405,6 +410,7 @@
 				);
 				INFOPLIST_FILE = StorePracticeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SkyTan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StorePractice.app/StorePractice";
 			};
@@ -420,6 +426,7 @@
 				);
 				INFOPLIST_FILE = StorePracticeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SkyTan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StorePractice.app/StorePractice";
 			};
@@ -456,19 +463,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		24E0F3531B94A8D200D43334 /* StorePractice.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				24E0F3541B94A8D200D43334 /* StorePractice.xcdatamodel */,
-			);
-			currentVersion = 24E0F3541B94A8D200D43334 /* StorePractice.xcdatamodel */;
-			path = StorePractice.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 24E0F3411B94A8D100D43334 /* Project object */;
 }

@@ -1,12 +1,13 @@
 //
 //  PurchasedDataController.h
-//  StorePractice
+//  MyStoreApp
 //
 //  Created by Skyler Tanner on 8/31/15.
-//  Copyright © 2015 Skyler Tanner. All rights reserved.
+//  Copyright (c) 2015 SkyTan. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+
 static NSString *const kPurchasedContentUpdated = @"kPurchasedContentUpdated";
 
 @interface PurchasedDataController : NSObject
