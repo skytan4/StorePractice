@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2476C1341B94BB4B007CCF99 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 2476C1331B94BB4B007CCF99 /* products.json */; settings = {ASSET_TAGS = (); }; };
+		2476C1381B94BC2C007CCF99 /* StorePurchaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476C1371B94BC2C007CCF99 /* StorePurchaseController.m */; settings = {ASSET_TAGS = (); }; };
+		2476C13B1B94BCCB007CCF99 /* PurchasedDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2476C13A1B94BCCB007CCF99 /* PurchasedDataController.m */; settings = {ASSET_TAGS = (); }; };
 		24E0F34F1B94A8D200D43334 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F34E1B94A8D200D43334 /* main.m */; };
 		24E0F3521B94A8D200D43334 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F3511B94A8D200D43334 /* AppDelegate.m */; };
 		24E0F3551B94A8D200D43334 /* StorePractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24E0F3531B94A8D200D43334 /* StorePractice.xcdatamodeld */; };
@@ -28,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2476C1331B94BB4B007CCF99 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		2476C1361B94BC2C007CCF99 /* StorePurchaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorePurchaseController.h; sourceTree = "<group>"; };
+		2476C1371B94BC2C007CCF99 /* StorePurchaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorePurchaseController.m; sourceTree = "<group>"; };
+		2476C1391B94BCCB007CCF99 /* PurchasedDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchasedDataController.h; sourceTree = "<group>"; };
+		2476C13A1B94BCCB007CCF99 /* PurchasedDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchasedDataController.m; sourceTree = "<group>"; };
 		24E0F3491B94A8D200D43334 /* StorePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E0F34D1B94A8D200D43334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24E0F34E1B94A8D200D43334 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -62,6 +70,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2476C1351B94BB8A007CCF99 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				2476C1361B94BC2C007CCF99 /* StorePurchaseController.h */,
+				2476C1371B94BC2C007CCF99 /* StorePurchaseController.m */,
+				2476C1391B94BCCB007CCF99 /* PurchasedDataController.h */,
+				2476C13A1B94BCCB007CCF99 /* PurchasedDataController.m */,
+				2476C1331B94BB4B007CCF99 /* products.json */,
+			);
+			name = IAP;
+			sourceTree = "<group>";
+		};
 		24E0F3401B94A8D100D43334 = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +103,12 @@
 		24E0F34B1B94A8D200D43334 /* StorePractice */ = {
 			isa = PBXGroup;
 			children = (
+				24E0F3591B94A8D200D43334 /* Main.storyboard */,
 				24E0F3501B94A8D200D43334 /* AppDelegate.h */,
 				24E0F3511B94A8D200D43334 /* AppDelegate.m */,
 				24E0F3561B94A8D200D43334 /* ViewController.h */,
 				24E0F3571B94A8D200D43334 /* ViewController.m */,
-				24E0F3591B94A8D200D43334 /* Main.storyboard */,
+				2476C1351B94BB8A007CCF99 /* IAP */,
 				24E0F35C1B94A8D200D43334 /* Images.xcassets */,
 				24E0F35E1B94A8D200D43334 /* LaunchScreen.xib */,
 				24E0F3531B94A8D200D43334 /* StorePractice.xcdatamodeld */,
@@ -203,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E0F35B1B94A8D200D43334 /* Main.storyboard in Resources */,
+				2476C1341B94BB4B007CCF99 /* products.json in Resources */,
 				24E0F3601B94A8D200D43334 /* LaunchScreen.xib in Resources */,
 				24E0F35D1B94A8D200D43334 /* Images.xcassets in Resources */,
 			);
@@ -225,7 +247,9 @@
 				24E0F3521B94A8D200D43334 /* AppDelegate.m in Sources */,
 				24E0F34F1B94A8D200D43334 /* main.m in Sources */,
 				24E0F3581B94A8D200D43334 /* ViewController.m in Sources */,
+				2476C1381B94BC2C007CCF99 /* StorePurchaseController.m in Sources */,
 				24E0F3551B94A8D200D43334 /* StorePractice.xcdatamodeld in Sources */,
+				2476C13B1B94BCCB007CCF99 /* PurchasedDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +444,7 @@
 				24E0F3711B94A8D200D43334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24E0F3721B94A8D200D43334 /* Build configuration list for PBXNativeTarget "StorePracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +453,7 @@
 				24E0F3741B94A8D200D43334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
