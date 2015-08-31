@@ -22,7 +22,7 @@
     
     
     self.adBannerView = [[ADBannerView alloc] initWithAdType:ADAdTypeBanner];
-    self.adBannerView.frame = CGRectMake(0, self.view.frame.size.height-50, self.adBannerView.frame.size.width, self.adBannerView.frame.size.height);
+    self.adBannerView.frame = CGRectMake(0,-50, self.adBannerView.frame.size.width, self.adBannerView.frame.size.height);
     [self.view addSubview:self.adBannerView];
     self.adBannerView.delegate = self;
 }
